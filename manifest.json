@@ -1,0 +1,20 @@
+{
+  "name": "Safe Path Campus",
+  "short_name": "SafePath",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f5faff",
+  "theme_color": "#2b4d82",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

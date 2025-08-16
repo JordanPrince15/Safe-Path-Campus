@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Path Campus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="app">
+    <h1>Safe Path Campus</h1>
+    <p>Find the safest way home from Rhodes campus</p>
+
+    <form id="routeForm">
+      <input type="text" id="from" placeholder="From (e.g. Eden Grove, Rhodes University)" required>
+      <input type="text" id="to" placeholder="To (e.g. Founders hall, Rhodes University)" required>
+      <button type="submit">Find Route</button>
+    </form>
+
+    <div id="result" style="height: 500px; width: 100%; margin-top: 20px;"></div>
+  </div>
+
+   <script src="script.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp-mqv9VFIZZoHJPJ2CozrTrcZVrvanVU&libraries=places&callback=initMap">
+</script>
+
+</body>
+</html>
+
+</html>
