@@ -33,3 +33,28 @@ button {
 #result {
   margin-top: 20px;
 }
+
+.streetlamp {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: yellow;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 150, 0.6),
+              0 0 20px 10px rgba(255, 255, 100, 0.4),
+              0 0 30px 15px rgba(255, 255, 50, 0.2);
+  animation: pulse 3s infinite;
+}
+
+.streetlamp.broken {
+  background: red;
+  box-shadow: 0 0 10px 5px rgba(255, 50, 50, 0.6),
+              0 0 20px 10px rgba(255, 0, 0, 0.4),
+              0 0 30px 15px rgba(150, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  50%  { transform: translate(-50%, -50%) scale(1.3); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
